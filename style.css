@@ -1,0 +1,142 @@
+/* =========================================
+   Modern CSS Reset & Base Styles (Enhanced)
+   ========================================= */
+
+/* 1. Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Root settings */
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    /* Prevent font scaling in landscape */
+    tab-size: 4;
+}
+
+/* 4. Body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Prevent distortion */
+img,
+video {
+    height: auto;
+}
+
+/* 6. Form elements inherit fonts */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* 7. Remove built-in button styles */
+button {
+    background: none;
+    border: none;
+}
+
+/* 8. Anchor defaults */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 9. List styles reset */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 10. Improve text wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 11. Create a stacking context root */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 12. Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 13. Text balance (modern browsers) */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* 14. Better default focus styles */
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* 15. Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* 16. Smooth scrolling (opt-in UX) */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* 17. Default scrollbar (optional, WebKit only) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 999px;
+}
