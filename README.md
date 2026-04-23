@@ -1,3 +1,3 @@
 # rasyaakbar-dev.github.io
 
-i hate my internship
+i will never finish this bruh
