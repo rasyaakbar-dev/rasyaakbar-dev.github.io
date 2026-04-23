@@ -14,30 +14,403 @@
         <meta name="generator" content="GitHub Pages" />
         <meta name="keywords" content="personal site, webpage" />
 
-        <meta name="color-scheme" content="light dark" />
+        <!-- <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="white" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)" /> -->
 
         <meta http-equiv="Content-Security-Policy" content="default-src https:" />
 
-        <meta http-equiv="refresh" content="0; url=https://rasyaakbar-dev.github.io/source/page/home/index.html" />
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+
+        <!-- ─── Navigation ─── -->
         <header>
-            <h1>Rasya Akbar A.N</h1>
-            <nav>
-                <menu>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <nav aria-label="Primary navigation">
+                <a href="#hero" aria-label="Jordan Ellis — Home">JE</a>
+                <menu role="list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </menu>
             </nav>
         </header>
 
-        <main></main>
+        <hr>
 
-        <footer></footer>
+        <main>
+
+            <!-- ─── Hero ─── -->
+            <section id="hero" aria-label="Introduction">
+                <!-- mark = highlighted/relevant status info -->
+                <p><mark>Available for freelance — 2026</mark></p>
+                <h1>Jordan Ellis</h1>
+                <p>
+                    A product designer &amp; developer crafting thoughtful digital experiences
+                    at the intersection of form, function, and human behaviour.
+                    Based in San Francisco, working worldwide.
+                </p>
+                <nav aria-label="Hero actions">
+                    <a href="#work">View Selected Work</a>
+                    <a href="#contact">Get in Touch</a>
+                </nav>
+            </section>
+
+            <!-- ─── About ─── -->
+            <section id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+
+                <figure>
+                    <img src="placeholder-portrait.jpg" alt="Portrait of Jordan Ellis" width="400" height="533" />
+                    <!-- address = contact/location info for the nearest article/body -->
+                    <figcaption>
+                        <address>San Francisco, <abbr title="California">CA</abbr></address>
+                        · Available <time datetime="2026-04">Q2 2026</time>
+                    </figcaption>
+                </figure>
+
+                <div>
+                    <h3>Designing the spaces between complexity</h3>
+                    <p>
+                        With over eight years in the industry, I specialise in turning ambiguous,
+                        multifaceted problems into clear, delightful product experiences. I work
+                        deeply with design systems, interaction design, and front-end implementation —
+                        bridging the gap between concept and code.
+                    </p>
+                    <p>
+                        I believe the best products feel effortless — not because they are simple,
+                        but because the complexity has been carefully dissolved. I bring this
+                        philosophy to every client engagement, from early-stage startups finding
+                        their footing to established companies rethinking their digital presence.
+                    </p>
+                    <p>
+                        When I'm not in front of a screen, you'll find me developing film,
+                        hunting down specialty coffee, or hiking the Marin Headlands.
+                    </p>
+
+                    <!-- dl/dt/dd = term–value pairs; data = machine-readable numeric values -->
+                    <dl aria-label="Key statistics">
+                        <div>
+                            <dt>Years experience</dt>
+                            <dd><data value="8">8+</data></dd>
+                        </div>
+                        <div>
+                            <dt>Projects shipped</dt>
+                            <dd><data value="42">42</data></dd>
+                        </div>
+                        <div>
+                            <dt>Happy clients</dt>
+                            <dd><data value="17">17</data></dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- ─── Work ─── -->
+            <section id="work" aria-labelledby="work-heading">
+                <h2 id="work-heading">Selected Projects</h2>
+                <a href="#contact">All case studies</a>
+
+                <ul role="list" aria-label="Project list">
+
+                    <li>
+                        <article>
+                            <img src="placeholder-project-1.jpg" alt="Meridian Design System preview" width="800"
+                                height="450" />
+                            <!-- dl/dt/dd = labelled project metadata -->
+                            <dl>
+                                <dt>Disciplines</dt>
+                                <dd>Product Design</dd>
+                                <dd>Design System</dd>
+                                <dt>Project</dt>
+                                <dd>
+                                    <h3>Meridian Design System</h3>
+                                </dd>
+                                <dt>Overview</dt>
+                                <dd>
+                                    <p>
+                                        A comprehensive component library and design language built for a
+                                        Series B fintech — spanning 240+ components, dark/light modes,
+                                        and full Figma-to-code documentation.
+                                    </p>
+                                </dd>
+                            </dl>
+                            <a href="#work" aria-label="View Meridian Design System case study">View case study</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <img src="placeholder-project-2.jpg" alt="Hive Task Intelligence app preview" width="800"
+                                height="450" />
+                            <dl>
+                                <dt>Disciplines</dt>
+                                <dd>Web App</dd>
+                                <dd>React</dd>
+                                <dt>Project</dt>
+                                <dd>
+                                    <h3>Hive — Task Intelligence</h3>
+                                </dd>
+                                <dt>Overview</dt>
+                                <dd>
+                                    <p>
+                                        End-to-end design and front-end development of a
+                                        <abbr title="Business-to-Business">B2B</abbr> project
+                                        management platform — from zero to public launch in 7 months.
+                                    </p>
+                                </dd>
+                            </dl>
+                            <a href="#work" aria-label="View Hive case study">View case study</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <img src="placeholder-project-3.jpg" alt="Verdant brand identity preview" width="800"
+                                height="450" />
+                            <dl>
+                                <dt>Disciplines</dt>
+                                <dd>Branding</dd>
+                                <dd>Web</dd>
+                                <dt>Project</dt>
+                                <dd>
+                                    <h3>Verdant — Brand Identity</h3>
+                                </dd>
+                                <dt>Overview</dt>
+                                <dd>
+                                    <p>
+                                        Full brand identity and marketing site for a sustainable
+                                        architecture studio — logo, typography, colour system, and
+                                        an award-winning Webflow build.
+                                    </p>
+                                </dd>
+                            </dl>
+                            <a href="#work" aria-label="View Verdant case study">View case study</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <img src="placeholder-project-4.jpg" alt="Luma Event Discovery app preview" width="800"
+                                height="450" />
+                            <dl>
+                                <dt>Disciplines</dt>
+                                <dd>Mobile</dd>
+                                <dd><abbr title="iPhone Operating System">iOS</abbr></dd>
+                                <dd><abbr title="User Experience">UX</abbr> Research</dd>
+                                <dt>Project</dt>
+                                <dd>
+                                    <h3>Luma — Event Discovery</h3>
+                                </dd>
+                                <dt>Overview</dt>
+                                <dd>
+                                    <p>
+                                        UX research, interaction design, and prototype delivery for a
+                                        social event-discovery app — 4.8-star rating at launch,
+                                        200k downloads in the first month.
+                                    </p>
+                                </dd>
+                            </dl>
+                            <a href="#work" aria-label="View Luma case study">View case study</a>
+                        </article>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- ─── Skills ─── -->
+            <section id="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Tools &amp; Craft</h2>
+                <p>
+                    A curated set of disciplines developed over years of working across
+                    design, engineering, and strategy.
+                </p>
+
+                <table aria-label="Skills by category and proficiency">
+                    <caption>Skills &amp; Proficiency</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Skill</th>
+                            <!-- meter = scalar value within a known range -->
+                            <th scope="col">Proficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="5">Design</th>
+                            <td>Figma</td>
+                            <td><meter value="1.0" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Expert">Expert</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Interaction Design</td>
+                            <td><meter value="1.0" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Expert">Expert</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Design Systems</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <td>User Research</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Brand Identity</td>
+                            <td><meter value="0.6" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Proficient">Proficient</meter></td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="5">Development</th>
+                            <td><abbr title="HyperText Markup Language">HTML</abbr> / <abbr
+                                    title="Cascading Style Sheets">CSS</abbr></td>
+                            <td><meter value="1.0" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Expert">Expert</meter></td>
+                        </tr>
+                        <tr>
+                            <td>React / Next.js</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <td>TypeScript</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Framer / Webflow</td>
+                            <td><meter value="1.0" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Expert">Expert</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td><meter value="0.6" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Proficient">Proficient</meter></td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="3">Strategy</th>
+                            <td>Product Strategy</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Workshop Facilitation</td>
+                            <td><meter value="0.6" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Proficient">Proficient</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Stakeholder Management</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="3">Tools</th>
+                            <td>Linear / Jira</td>
+                            <td><meter value="1.0" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Expert">Expert</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Notion / Confluence</td>
+                            <td><meter value="0.8" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Advanced">Advanced</meter></td>
+                        </tr>
+                        <tr>
+                            <td>Git / GitHub</td>
+                            <td><meter value="0.6" min="0" max="1" low="0.4" high="0.75" optimum="1"
+                                    title="Proficient">Proficient</meter></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- ─── Experience ─── -->
+            <section id="experience" aria-labelledby="experience-heading">
+                <h2 id="experience-heading">Experience</h2>
+
+                <table aria-label="Work history">
+                    <caption>Work History</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Period</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><time datetime="2023">2023</time>–<time>Present</time></td>
+                            <td>Principal Designer</td>
+                            <td>Axiom Labs, San Francisco</td>
+                            <td>Leading design across three product verticals. Built and scaled the design system from
+                                scratch, hired two senior designers, and established the first user research practice at
+                                the company.</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2020">2020</time>–<time datetime="2023">2023</time></td>
+                            <td>Senior Product Designer</td>
+                            <td>Stripe, Remote</td>
+                            <td>Contributed to the Stripe Dashboard redesign and led the merchant onboarding flow,
+                                reducing time-to-first-payment by <strong>38%</strong> through iterative research and
+                                design.</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2018">2018</time>–<time datetime="2020">2020</time></td>
+                            <td>Product Designer</td>
+                            <td>Fictive Studio, New York</td>
+                            <td>Agency role covering branding, digital design, and development for clients across media,
+                                health, and technology sectors.</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2016">2016</time>–<time datetime="2018">2018</time></td>
+                            <td><abbr title="User Interface">UI</abbr>/<abbr title="User Experience">UX</abbr> Designer
+                            </td>
+                            <td>Early-stage startup, San Francisco</td>
+                            <td>First design hire. Responsible for all design from zero — brand, product, and marketing
+                                — through Series A raise.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- ─── Contact ─── -->
+            <section id="contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Let's make something great</h2>
+                <p>
+                    I'm selectively available for freelance engagements, long-term collaborations,
+                    and advisory roles. Drop me a line — I reply within 24 hours.
+                </p>
+
+                <!-- address = contact information for the page author/owner -->
+                <address>
+                    <a href="mailto:hello@jordanellis.design" aria-label="Email Jordan Ellis">
+                        hello@jordanellis.design
+                    </a>
+
+                    <ul role="list" aria-label="Social links">
+                        <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+                        <li><a href="#" aria-label="Dribbble profile">Dribbble</a></li>
+                        <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+                        <li><a href="#" aria-label="Twitter / X profile">Twitter / X</a></li>
+                        <li><a href="#" aria-label="Download CV">Read CV</a></li>
+                    </ul>
+                </address>
+            </section>
+
+        </main>
+
+        <!-- ─── Footer ─── -->
+        <footer role="contentinfo">
+            <small>© 2026 Jordan Ellis — All rights reserved</small>
+            <p>Designed &amp; built with intent.</p>
+        </footer>
+
     </body>
 
 </html>
