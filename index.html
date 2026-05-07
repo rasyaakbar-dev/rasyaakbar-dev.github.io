@@ -13,7 +13,292 @@
         <meta name="generator" content="GitHub Pages">
         <meta name="keywords" content="personal site, webpage">
 
-        <link rel="stylesheet" href="style.css">
+        <style>
+            :root {
+                /* Color Palette - Premium Slate/Indigo */
+                --bg-light: #ffffff;
+                --bg-dark: #0f172a;
+                --text-light: #1e293b;
+                --text-dark: #f8fafc;
+                --accent: #6366f1;
+                --accent-hover: #4f46e5;
+                --surface-light: #f1f5f9;
+                --surface-dark: #1e293b;
+                --border-light: #e2e8f0;
+                --border-dark: #334155;
+
+                /* Typography */
+                --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+                --font-heading: 'Outfit', sans-serif;
+
+                /* Spacing & Radii */
+                --radius-sm: 8px;
+                --radius-md: 12px;
+                --radius-lg: 20px;
+                --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+                --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+                /* Light mode defaults */
+                color-scheme: light dark;
+                --bg: var(--bg-light);
+                --text: var(--text-light);
+                --surface: var(--surface-light);
+                --border: var(--border-light);
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg: var(--bg-dark);
+                    --text: var(--text-dark);
+                    --surface: var(--surface-dark);
+                    --border: var(--border-dark);
+                }
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--bg);
+                color: var(--text);
+                font-family: var(--font-main);
+                line-height: 1.6;
+                transition: background-color 0.3s, color 0.3s;
+                overflow-x: hidden;
+            }
+
+            :is(h1, h2, h3) {
+                font-family: var(--font-heading);
+                font-weight: 700;
+                line-height: 1.2;
+                margin-block-end: 1rem;
+                text-wrap: balance;
+            }
+
+            /* --- Layout --- */
+            header {
+                padding-block: 2rem;
+                padding-inline: 5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                inset-block-start: 0;
+                z-index: 100;
+                background: color-mix(in srgb, var(--bg) 80%, transparent);
+                backdrop-filter: blur(10px);
+                border-block-end: 1px solid var(--border);
+            }
+
+            menu {
+                display: flex;
+                gap: 2rem;
+                list-style: none;
+
+                & a {
+                    text-decoration: none;
+                    color: var(--text);
+                    font-weight: 500;
+                    transition: color 0.2s;
+
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--accent);
+                    }
+                }
+            }
+
+            main {
+                max-width: 1100px;
+                margin-inline: auto;
+                padding-block: 4rem;
+                padding-inline: 5%;
+            }
+
+            section {
+                margin-block-end: 6rem;
+            }
+
+            /* --- Hero --- */
+            #hero {
+                text-align: center;
+                padding-block: 6rem;
+
+                & mark {
+                    background: var(--accent);
+                    color: white;
+                    padding-block: 0.2rem;
+                    padding-inline: 0.8rem;
+                    border-radius: 100px;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                }
+
+                & h2 {
+                    font-size: clamp(2.5rem, 8vw, 4.5rem);
+                    margin-block: 1.5rem;
+                }
+
+                & p {
+                    font-size: 1.2rem;
+                    color: var(--text);
+                    max-width: 600px;
+                    margin-inline: auto;
+                    margin-block-end: 2rem;
+                    opacity: 0.8;
+                    text-wrap: pretty;
+                }
+
+                & nav {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: center;
+
+                    & a {
+                        padding-block: 0.8rem;
+                        padding-inline: 2rem;
+                        border-radius: var(--radius-md);
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: transform 0.2s, background 0.2s;
+
+                        &:first-child {
+                            background: var(--accent);
+                            color: white;
+                        }
+
+                        &:last-child {
+                            border: 2px solid var(--border);
+                            color: var(--text);
+                        }
+
+                        &:hover,
+                        &:focus-visible {
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+            }
+
+            /* --- Projects --- */
+            #project ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+                gap: 2rem;
+                list-style: none;
+            }
+
+            article {
+                background: var(--surface);
+                border-radius: var(--radius-lg);
+                overflow: hidden;
+                border: 1px solid var(--border);
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover,
+                &:focus-within {
+                    transform: translateY(-5px);
+                    box-shadow: var(--shadow-md);
+                }
+
+                & img {
+                    inline-size: 100%;
+                    block-size: 250px;
+                    object-fit: cover;
+                }
+            }
+
+            .project-details {
+                padding: 2rem;
+            }
+
+            .project-disciplines {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                list-style: none;
+                margin-block-end: 1rem;
+
+                & li {
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    padding-block: 0.2rem;
+                    padding-inline: 0.6rem;
+                    background: var(--border);
+                    border-radius: 4px;
+                }
+            }
+
+            /* --- Tables & Stats --- */
+            dl {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3rem;
+                margin-block-start: 2rem;
+
+                & dt {
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    opacity: 0.6;
+                }
+
+                & dd {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    font-family: var(--font-heading);
+                }
+            }
+
+            table {
+                inline-size: 100%;
+                border-collapse: collapse;
+                margin-block-start: 2rem;
+
+                & th,
+                & td {
+                    padding: 1.5rem;
+                    text-align: start;
+                    border-block-end: 1px solid var(--border);
+                }
+
+                & th[scope="rowgroup"] {
+                    font-weight: 700;
+                    color: var(--accent);
+                }
+            }
+
+            meter {
+                inline-size: 100%;
+                block-size: 8px;
+
+                &::-webkit-meter-bar {
+                    background: var(--border);
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                &::-webkit-meter-optimum-value {
+                    background: var(--accent);
+                    border-radius: 10px;
+                }
+            }
+
+            /* --- Footer --- */
+            footer {
+                padding-block: 4rem;
+                padding-inline: 5%;
+                text-align: center;
+                border-block-start: 1px solid var(--border);
+                opacity: 0.6;
+            }
+        </style>
     </head>
 
     <body>
@@ -53,7 +338,7 @@
 
                 <figure>
                     <img src="placeholder-portrait.jpg" alt="Portrait of Rasya Akbar Nugraha" width="400"
-                        height="533" />
+                        height="533" loading="lazy" decoding="async" />
                     <figcaption>
                         <address>Singosari, <abbr title="Indonesia">ID</abbr></address>
                         · Unavailable <time datetime="2025-05">Q2 2025</time>
@@ -99,7 +384,7 @@
                     <li>
                         <article>
                             <img src="placeholder-project-1.jpg" alt="Meridian Design System preview" width="800"
-                                height="450" />
+                                height="450" loading="lazy" decoding="async" />
                             <div class="project-details">
                                 <ul aria-label="Project disciplines" class="project-disciplines">
                                     <li>Odoo Hospitality</li>
@@ -120,7 +405,7 @@
                     <li>
                         <article>
                             <img src="placeholder-project-2.jpg" alt="Hive Task Intelligence app preview" width="800"
-                                height="450" />
+                                height="450" loading="lazy" decoding="async" />
                             <div class="project-details">
                                 <ul aria-label="Project disciplines" class="project-disciplines">
                                     <li>Disciplines</li>
@@ -141,7 +426,7 @@
                     <li>
                         <article>
                             <img src="placeholder-project-3.jpg" alt="Verdant brand identity preview" width="800"
-                                height="450" />
+                                height="450" loading="lazy" decoding="async" />
                             <div class="project-details">
                                 <ul aria-label="Project disciplines" class="project-disciplines">
                                     <li>Disciplines</li>
@@ -162,7 +447,7 @@
                     <li>
                         <article>
                             <img src="placeholder-project-4.jpg" alt="Luma Event Discovery app preview" width="800"
-                                height="450" />
+                                height="450" loading="lazy" decoding="async" />
                             <div class="project-details">
                                 <ul aria-label="Project disciplines" class="project-disciplines">
                                     <li>Disciplines</li>
