@@ -2,7 +2,7 @@
 
 before you scroll down and read this piece of shit readme, you better take a moment to appreciate them indisputable goats when it come to website designs:
 
-- [even better motherfucking website](https://evenbettermotherfuckingwebsite.com/)
+- [even better motherfucking website](https://evenbettermotherfucking.website/)
 - [hackernews](https://news.ycombinator.com/)
 - [craiglist](https://craigslist.org/)
 - [openbsd](https://www.openbsd.org/)
@@ -12,4 +12,6 @@ before you scroll down and read this piece of shit readme, you better take a mom
 - [gwern](https://gwern.net/)
 - [paulgraham](https://www.paulgraham.com/)
 
-i will never finish this site bruhhhh
+anyway
+
+i will never finish this website lol
