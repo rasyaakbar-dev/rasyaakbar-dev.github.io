@@ -7,193 +7,212 @@
 
         <title>Rasya Akbar Nugraha | Software Engineer</title>
         <meta name="description"
-            content="Portfolio of Rasya Akbar Nugraha, a software engineer focused on reliable backend systems.">
+            content="Portfolio of Rasya Akbar Nugraha, a software engineering student specializing in ERP development with Odoo, full-stack applications, and backend systems.">
         <meta name="author" content="Rasya Akbar Nugraha">
-        <meta name="generator" content="HTML & CSS">
-        <meta name="keywords" content="">
+        <!-- <meta name="generator" content="HTML & CSS"> -->
+        <meta name="keywords"
+            content="portfolio, software engineer, Odoo, ERP, Python, PostgreSQL, full stack, Rasya Akbar Nugraha">
 
-        <meta name="color-scheme" content="light dark">
+        <meta name="color-scheme" content="light">
+        <link href="home.css" rel="stylesheet">
     </head>
 
     <body>
 
-        <header>
+        <a href="#main">Skip to content</a>
 
-            <nav>
-                <menu>
-                    <li><a href="#about">About &darr;</a></li>
-                    <li><a href="#projects">Projects &darr;</a></li>
-                    <li><a href="#skills">Skills &darr;</a></li>
-                    <li><a href="#contact">Contact &darr;</a></li>
-                </menu>
-            </nav>
+        <header>
+            <p><strong>Rasya Akbar Nugraha</strong> — portfolio</p>
         </header>
 
-        <main>
-            <section id="profile">
-                <hgroup>
-                    <h1>Rasya Akbar Nugraha</h1>
-                    <p>Software Engineer &amp; Developer — 2026</p>
-                </hgroup>
+        <nav aria-label="Section navigation">
+            <a href="#profile">Profile</a>
+            <a href="#works">Works</a>
+            <a href="#notes">Notes</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-                <mark>Currently in Internship.</mark>
+        <main id="main">
 
-                <p>
-                    Building reliable systems and practical user experiences.
-                    Focused on backend stability, data integrity, and straightforward architectures.
-                </p>
+            <!-- 1. PROFILE -->
+            <section id="profile" aria-labelledby="profile-heading">
+                <div>
+                    <div aria-hidden="true">RAN</div>
+                    <div>
+                        <h1 id="profile-heading">Rasya Akbar Nugraha</h1>
+                        <p>Software Engineer | Full Stack</p>
+                    </div>
+                    <span>Not available</span>
+                </div>
+
+                <div>
+                    <p>
+                        Software engineering student at SMK Negeri 8 Malang with hands-on experience in
+                        ERP development and customization using the Odoo Framework. Skilled in building
+                        backend applications with Python and PostgreSQL.
+                    </p>
+                    <p>
+                        Passionate about building efficient, maintainable solutions that align with real
+                        business needs. Comfortable with Git, Docker, and Linux-based environments.
+                    </p>
+                    <ul>
+                        <li>Based in Malang, Indonesia</li>
+                        <li>Rekayasa Perangkat Lunak, SMK Negeri 8 Malang, expected 2027</li>
+                        <li>Works mostly in Python, JavaScript, Odoo Framework</li>
+                    </ul>
+                </div>
             </section>
 
-            <section id="about">
-                <h2>About</h2>
-
-                <figure>
-                    <img src="/assets/pic/portrait.jpg" alt="Portrait of Rasya Akbar Nugraha" width="400" height="300"
-                        loading="lazy">
-                    <figcaption>Based in <address>Singosari, Jawa Timur, Indonesia.</address>
-                    </figcaption>
-                </figure>
-
-                <p>
-                    Backend developer working across Python, .NET, and Java stacks.
-                    Experience with PostgreSQL and MySQL in production-oriented use cases.
-                </p>
-                <p>
-                    I prefer minimal abstractions and solutions that are easy to reason about and debug.
-                    Most of my work involves improving existing systems—resolving edge cases and ensuring consistent
-                    behavior in production.
-                </p>
-            </section>
-
-            <section id="projects">
-                <h2>Selected Projects</h2>
+            <!-- 2. WORKS -->
+            <section id="works" aria-labelledby="works-heading">
+                <p>Selected work</p>
+                <h2 id="works-heading">Works</h2>
 
                 <article>
-                    <h3>Odoo Pesantren DQI</h3>
-                    <ul>
-                        <li>ERP</li>
-                        <li>Web</li>
-                        <li>Developer &amp; Engineer</li>
-                    </ul>
-                    <p>
-                        A customized Odoo ERP for Pesantren DQI with integration with BSI for payments and other
-                        features.
-                    </p>
-                    <a href="#">View Project</a>
+                    <span>2026</span>
+                    <div>
+                        <h3><a href="#">Estate Management &amp; Accounting System</a></h3>
+                        <p>
+                            An Odoo module for property sales management with offer lifecycle tracking,
+                            automatic validation logic for offer acceptance/rejection, full integration
+                            with Odoo Accounting for automated invoicing, 6% sales commission calculation,
+                            and admin fee billing.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Odoo</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
                 </article>
 
                 <article>
-                    <h3>Odoo Hospitality</h3>
-                    <ul>
-                        <li>ERP</li>
-                        <li>Odoo</li>
-                        <li>Maintainer</li>
-                    </ul>
-                    <p>
-                        A complete ERP system for clinics, hospitals, and health centers —
-                        from patient records and appointments to billing and inventory.
-                    </p>
-                    <a href="#">View Project</a>
+                    <span>2025</span>
+                    <div>
+                        <h3><a href="#">Boarding House Management System</a></h3>
+                        <p>
+                            An Odoo 18 module for boarding house management covering property, room types,
+                            units, and facilities. Features automated booking and lease contracts with
+                            duration-based pricing, invoice generation via account.move, Cron Jobs for
+                            expired booking cancellation, and role-based security with custom rejection wizards.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Odoo 18</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
                 </article>
+            </section>
+
+            <!-- 3. NOTES -->
+            <section id="notes" aria-labelledby="notes-heading">
+                <p>Writing</p>
+                <h2 id="notes-heading">Notes</h2>
 
                 <article>
-                    <h3>Verdant — Brand Identity</h3>
-                    <ul>
-                        <li>Branding</li>
-                        <li>Web</li>
-                        <li>Architecture</li>
-                    </ul>
-                    <p>
-                        Full brand identity and marketing site for a sustainable architecture studio —
-                        logo, typography, and an award-winning build.
-                    </p>
-                    <a href="#">View Case Study</a>
+                    <span>Coming soon</span>
+                    <div>
+                        <span>Notes</span>
+                        <h3><a href="#">Notes coming soon</a></h3>
+                        <p>I'll be posting notes, write-ups, and thoughts here. Check back later.</p>
+                    </div>
                 </article>
-
             </section>
 
-            <section id="skills">
-                <h2>Tools &amp; Craft</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Skill</th>
-                            <th>Proficiency</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Backend</td>
-                            <td>Python / Odoo</td>
-                            <td><meter value="0.9" title="Expert">90%</meter></td>
-                        </tr>
-                        <tr>
-                            <td>Backend</td>
-                            <td>.NET / Java</td>
-                            <td><meter value="0.7" title="Advanced">70%</meter></td>
-                        </tr>
-                        <tr>
-                            <td>Database</td>
-                            <td>PostgreSQL / MySQL</td>
-                            <td><meter value="0.8" title="Advanced">80%</meter></td>
-                        </tr>
-                        <tr>
-                            <td>Frontend</td>
-                            <td>HTML / CSS / JS</td>
-                            <td><meter value="0.75" title="Advanced">75%</meter></td>
-                        </tr>
-                        <tr>
-                            <td>DevOps</td>
-                            <td>Git / Docker</td>
-                            <td><meter value="0.6" title="Proficient">60%</meter></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- 4. EXPERIENCE -->
+            <section id="experience" aria-labelledby="experience-heading">
+                <p>Skillset &amp; history</p>
+                <h2 id="experience-heading">Experience</h2>
+
+                <div>
+                    <div>
+                        <div>
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>HTML &amp; CSS</li>
+                                <li>C#</li>
+                                <li>Dart</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                                <li>Linux</li>
+                                <li>Proxmox</li>
+                                <li>aaPanel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Frameworks</h3>
+                            <ul>
+                                <li>Odoo</li>
+                                <li>Next.js</li>
+                                <li>.NET</li>
+                                <li>TailwindCSS</li>
+                                <li>Flutter</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <article>
+                            <span>Jan 2026 — Jul 2026</span>
+                            <h3>ERP Odoo Module Maintainer, PT. Universal Big Data</h3>
+                            <p>Praktek Kerja Lapangan. Customized and maintained Odoo backend modules; developed BSI
+                                Smart Billing (BPI) integration; resolved 30+ production issues; refactored 50+ code
+                                files to Odoo standards; managed dev and deployment environments using Docker, Proxmox,
+                                SSH, and Linux CLI.</p>
+                        </article>
+                        <article>
+                            <span>Jun 2024 — Jul 2027</span>
+                            <h3>Rekayasa Perangkat Lunak, SMK Negeri 8 Malang</h3>
+                            <p>Coursework in mobile programming, databases, text/graphics/multimedia programming, web
+                                development, and electives in AI &amp; IoT. Expected graduation 2027.</p>
+                        </article>
+                    </div>
+                </div>
             </section>
 
-            <section id="experience">
-                <h2>Experience</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>2026 — Present</th>
-                            <td>
-                                <strong>Odoo Backend Developer</strong><br>
-                                PT. Universal Big Data (UBIG)<br>
-                                <em>Contributed to the Stripe Dashboard redesign and led merchant onboarding flows.</em>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>2024 — 2026</th>
-                            <td>
-                                <strong>Student Software Engineer</strong><br>
-                                SMKN 8 Malang<br>
-                                <em>Focused on core design systems and internal tooling.</em>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <!-- 5. CONTACT -->
+            <section id="contact" aria-labelledby="contact-heading">
+                <p>Get in touch</p>
+                <h2 id="contact-heading">Contact</h2>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>I'm available for collaborations and advisory roles. Drop me a line — I reply within 24 hours.</p>
-                <address>
-                    <a href="mailto:rasyaakbar5b@gmail.com">rasyaakbar5b@gmail.com</a>
-                </address>
-                <ul class="social-links">
-                    <li><a href="https://linkedin.com/in/rasya-akbar-nugraha-b890b4400" target="_blank">LinkedIn</a>
+                <ul>
+                    <li>
+                        <span>Email</span>
+                        <a href="mailto:rasyaakbarnugraha@gmail.com">rasyaakbarnugraha@gmail.com</a>
                     </li>
-                    <li><a href="https://github.com/rasyaakbar-dev" target="_blank">GitHub</a></li>
-                    <li><a href="https://x.com/NRasya37251" target="_blank">Twitter</a></li>
+                    <li>
+                        <span>GitHub</span>
+                        <a href="https://github.com/rasyaakbar-dev" target="_blank"
+                            rel="noopener noreferrer">github.com/rasyaakbar-dev</a>
+                    </li>
+                    <li>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/rasya-akbar-nugraha-b890b4400" target="_blank"
+                            rel="noopener noreferrer">www.linkedin.com/in/rasya-akbar-nugraha-b890b4400</a>
+                    </li>
+                    <li>
+                        <span>CV</span>
+                        <a href="assets/Curriculum Vitae (CV).pdf" target="_blank" rel="noopener noreferrer">Download
+                            PDF</a>
+                    </li>
                 </ul>
             </section>
+
         </main>
 
         <footer>
-            <p><a href="/index.html">Home</a></p>
-            <p>&copy; 2026 Rasya Akbar Nugraha. All rights reserved. <a href="LICENSE">License</a></p>
+            Built with plain & simple HTML and CSS.
         </footer>
 
     </body>
