@@ -221,7 +221,7 @@
             flex-direction: column;
             gap: 14px;
 
-            & > div:first-child {
+            &>div:first-child {
                 /* avatar: portrait photo with RAN initials fallback */
                 position: relative;
                 overflow: hidden;
@@ -350,7 +350,7 @@
             padding-top: 2px;
         }
 
-        & > div {
+        &>div {
             display: flex;
             flex-direction: column;
 
@@ -360,7 +360,7 @@
                 margin: 0 0 4px;
             }
 
-            & > p {
+            &>p {
                 color: var(--fg-muted);
             }
 
@@ -381,9 +381,8 @@
             }
 
             /* project links / status row */
-            & > div {
-                margin-top: auto;
-                padding-top: 12px;
+            &>div {
+                margin-top: 12px;
                 align-self: flex-end;
                 display: flex;
                 align-items: center;
